@@ -10,13 +10,13 @@ on:
     paths-ignore:
       - "docs/**"
       - "**/*.md"
-      - "**/*.yml"
+      - "!.github/*.yml"
   pull_request:
     branches: ["*"]
     paths-ignore:
       - "docs/**"
       - "**/*.md"
-      - "**/*.yml"
+      - "!.github/*.yml"
 
 jobs:
   check-license:
@@ -114,3 +114,81 @@ jobs:
           name: ${{ matrix.binary }}-${{ matrix.arch }}
           path: bin/linux_${{ matrix.arch}}/${{ matrix.binary }}
 
+  docker:
+    needs: [ build ]
+    runs-on: ubuntu-latest
+    services:
+      registry:
+        credentials:
+          username: admin
+          password: passw0rd
+        image: registry:2
+        ports:
+          - 5000:5000
+    strategy:
+      matrix:
+        arch: [ arm64, amd64 ]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Download run lvscare artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: lvscare-${{ matrix.arch }}
+          path: docker/lvscare/lvscare
+
+      - name: Download run sealctl artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: sealctl-${{ matrix.arch }}
+          path: docker/patch/sealctl
+
+      - name: Download run image-cri-shim artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: image-cri-shim-${{ matrix.arch }}
+          path: docker/patch/image-cri-shim
+
+      - name: Download run sealos artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: sealos-${{ matrix.arch }}
+          path: docker/sealos/sealos
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+        with:
+          driver-opts: network=host
+
+      - name: Login to Registry
+        uses: docker/login-action@v2
+        with:
+          registry: localhost:5000
+          username: admin
+          password: passw0rd
+
+      - name: Build Push lvscare image
+        uses: docker/build-push-action@v3
+        with:
+          context: docker/lvscare
+          file: docker/lvscare/Dockerfile
+          platforms: linux/${{ matrix.arch}}
+          push: true
+          tags: localhost:5000/lvscare:temp-${{ matrix.arch}}
+
+      - name: Save docker
+        env:
+          REGISTRY_USERNAME: admin
+          REGISTRY_PASSWORD: passw0rd
+        run: |
+#          docker save -o lvscare-${{ matrix.arch}}.tar localhost:5000/lvscare:temp-${{ matrix.arch}}
+          wget https://github.com/labring/sealos/releases/download/v4.0.0/sealos_4.0.0_linux_amd64.tar.gz
+          tar -zxvf sealos_4.0.0_linux_amd64.tar.gz sealos &&  chmod +x sealos
+          ipvsImage=localhost:5000/lvscare:temp-${{ matrix.arch}}
+          echo "$ipvsImage" > docker/patch/images/shim/lvscareImage
+          sed -i "s#__lvscare__#$ipvsImage#g" docker/patch/Dockerfile
+          sudo rm -rf /usr/share/containers/containers.conf
+          sudo ./sealos login localhost:5000  -u $REGISTRY_USERNAME -p $REGISTRY_PASSWORD
+          sudo ./sealos build -t docker.io/labring/patch:new  --platform linux/${{ matrix.arch}} -f docker/patch/Dockerfile docker/patch
+          sudo ./sealos images
