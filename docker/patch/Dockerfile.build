@@ -1,0 +1,5 @@
+FROM alpine:latest
+
+ARG Bin
+COPY $Bin /usr/bin/$Bin
+ENTRYPOINT ["/usr/bin/$Bin"]
