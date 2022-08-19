@@ -67,26 +67,16 @@ jobs:
           FURY_TOKEN: ${{ secrets.FURY_TOKEN }}
 
       - name: build (and publish) main image
-        env:
-          # fork friendly ^^
-          DOCKER_REPO: ghcr.io/${{ github.repository_owner }}/lvscare
         run: |
-          docker buildx build \
-          --platform linux/amd64,linux/arm64 \
-          --build-arg VERSION=${{ steps.prepare.outputs.tag_name }} \
-          --push \
-          -t ${DOCKER_REPO}:${{ steps.prepare.outputs.tag_name }} \
-          -f docker/lvscare/Dockerfile \
-          .
+          make image.workflow  \
+          PLATFORMS="linux_arm64 linux_amd64"\
+          DOCKERFILE="docker/lvscare/Dockerfile"\
+          CONTEXT="." REGISTRY_PREFIX="ghcr.io/${{ github.repository_owner }}"\
+          IMAGE="lvscare" VERSION="latest"
       - name: build (and publish) tag image
-        env:
-          # fork friendly ^^
-          DOCKER_REPO: ghcr.io/${{ github.repository_owner }}/lvscare
         run: |
-          docker buildx build \
-          --platform linux/amd64,linux/arm64 \
-          --build-arg VERSION=${{ steps.prepare.outputs.tag_name }} \
-          --push \
-          -t ${DOCKER_REPO}:${{ steps.prepare.outputs.tag_name }} \
-          -f docker/lvscare/Dockerfile \
-          .
+          make image.workflow  \
+          PLATFORMS="linux_arm64 linux_amd64"\
+          DOCKERFILE="docker/lvscare/Dockerfile"\
+          CONTEXT="." REGISTRY_PREFIX="ghcr.io/${{ github.repository_owner }}"\
+          IMAGE="lvscare" VERSION="${{ steps.prepare.outputs.tag_name }}"

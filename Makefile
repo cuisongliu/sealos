@@ -58,9 +58,9 @@ build:
 	@$(MAKE) go.build
 
 ## build.multiarch: Build source code for multiple platforms. See option PLATFORMS.
-.PHONY: build.multiarch
-build.multiarch:
-	@$(MAKE) go.build.multiarch
+.PHONY: image.workflow
+image.workflow:
+	@$(MAKE) image.workflow
 
 # ## image: Build docker images for host platform.
 # .PHONY: image
