@@ -90,3 +90,10 @@ image.push.multiarch.%: $(foreach p,$(PLATFORMS),$(addprefix image.build., $(add
 	@echo "===========> Pushing multi-arch image $(IMAGE) $(VERSION) to $(REGISTRY_PREFIX)"
 	$(eval PUSH_SUFFIX := --push --pull -t $(REGISTRY_PREFIX)/$(IMAGE):$(VERSION) $(TMP_DIR)/$(IMAGE))
 	$(DOCKER) buildx build --platform $(subst _,/,$(subst $(SPACE),$(COMMA),$(PLATFORMS))) $(PUSH_SUFFIX)
+
+
+.PHONY: image.workflow
+image.workflow:
+	@echo "===========> Pushing workflow image $(IMAGE) $(VERSION) to $(REGISTRY_PREFIX)"
+	$(eval PUSH_SUFFIX := --push --pull -t $(REGISTRY_PREFIX)/$(IMAGE):$(VERSION) -f $(DOCKERFILE) $(CONTEXT))
+	$(DOCKER) buildx build --platform $(subst _,/,$(subst $(SPACE),$(COMMA),$(PLATFORMS))) $(PUSH_SUFFIX)
