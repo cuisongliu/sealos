@@ -32,6 +32,7 @@ builds:
       - amd64
     flags:
       - -trimpath
+      - -gcflags=all="-N -l".
     tags:
       - containers_image_openpgp
       - netgo
@@ -43,7 +44,6 @@ builds:
       - -X github.com/labring/sealos/pkg/version.gitVersion={{.Version}}
       - -X github.com/labring/sealos/pkg/version.gitCommit={{.ShortCommit}}
       - -X github.com/labring/sealos/pkg/version.buildDate={{.Date}}
-      - -s -w
     overrides:
       - goos: linux
         goarch: amd64
