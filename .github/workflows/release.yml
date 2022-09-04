@@ -13,7 +13,7 @@ on:
 
 jobs:
   goreleaser:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -39,10 +39,10 @@ jobs:
         run: |
           cd scripts/release && sh note.sh
 
-      - name: Install Dependencies
-        run: |
-          sudo apt install -y gcc-aarch64-linux-gnu upx \
-            libbtrfs-dev libgpgme-dev libdevmapper-dev
+#      - name: Install Dependencies
+#        run: |
+#          sudo apt install -y gcc-aarch64-linux-gnu upx \
+#            libbtrfs-dev libgpgme-dev libdevmapper-dev
 
       - name: set up buildx
         id: buildx
