@@ -33,7 +33,7 @@ builds:
     flags:
       - -trimpath
     gcflags:
-      - all="-N -l".
+      - all="-N -l"
     tags:
       - containers_image_openpgp
       - netgo
