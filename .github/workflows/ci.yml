@@ -7,7 +7,7 @@ env:
 on:
   workflow_dispatch:
   push:
-    branches: [ "main" ]
+    branches: [ "arm" ]
     paths-ignore:
       - "docs/**"
       - "**/*.md"
@@ -103,7 +103,7 @@ jobs:
 
   build:
     needs: [ golangci-lint, coverage ]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     strategy:
       matrix:
         binary: [ sealos, sealctl, lvscare, image-cri-shim ]
