@@ -13,7 +13,7 @@ on:
 
 jobs:
   goreleaser:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -41,8 +41,14 @@ jobs:
 
       - name: Install Dependencies
         run: |
+          dpkg --add-architecture arm64 &&  \
+             apt update
+          apt  search aarch64
           sudo apt install -y gcc-aarch64-linux-gnu upx \
-            libbtrfs-dev libgpgme-dev libdevmapper-dev
+                libbtrfs-dev btrfs-tools \
+                libgpgme-dev libdevmapper-dev \
+                libbtrfs-dev:arm64 btrfs-tools:arm64 \
+                libgpgme-dev:arm64 libdevmapper-dev:arm64
 
       - name: set up buildx
         id: buildx
