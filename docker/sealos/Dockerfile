@@ -1,9 +1,19 @@
-FROM ubuntu:18.04
-ARG TARGETPLATFORM
+FROM --platform=$BUILDPLATFORM alpine:3.16.2 as builder
 
+WORKDIR /workspace
+# Copy the Go Modules manifests
+ARG TARGETOS
+ARG TARGETARCH
+ARG VERSION
+ARG PROJECT=sealos
+ARG UNAME=labring
+
+ADD https://github.com/${UNAME}/${PROJECT}/releases/download/v${VERSION}/sealos_${VERSION}_${TARGETOS}_${TARGETARCH}.tar.gz sealos.tar.gz
+RUN tar -zxvf sealos.tar.gz sealos && chmod +x sealos
+
+FROM ubuntu:18.04
 WORKDIR /usr/bin/
-RUN --mount=target=/build tar xf /build/dist/sealos_*_$(echo ${TARGETPLATFORM} | tr '/' '_' | sed -e 's/arm_/arm/').tar.gz sealos && \
-    chmod +x sealos
+COPY --from=builder /workspace/sealos /usr/bin/
 
 # nosemgrep: dockerfile.security.missing-user.missing-user
 ENTRYPOINT ["/usr/bin/sealos"]
