@@ -77,12 +77,16 @@ jobs:
           docker buildx build \
           --platform linux/amd64,linux/arm64 \
           --push \
+          --build-arg VERSION=${{ steps.prepare.outputs.tag_name }} \
+          --build-arg UNAME=${{ github.repository_owner }} \
           -t ${DOCKER_REPO}:${{ steps.prepare.outputs.tag_name }} \
           -f docker/lvscare/Dockerfile \
           .
           docker buildx build \
           --platform linux/amd64,linux/arm64 \
           --push \
+          --build-arg VERSION=${{ steps.prepare.outputs.tag_name }} \
+          --build-arg UNAME=${{ github.repository_owner }} \
           -t ${DOCKER_REPO}:latest \
           -f docker/lvscare/Dockerfile \
           .
@@ -95,12 +99,16 @@ jobs:
           docker buildx build \
           --platform linux/amd64,linux/arm64 \
           --push \
+          --build-arg VERSION=${{ steps.prepare.outputs.tag_name }} \
+          --build-arg UNAME=${{ github.repository_owner }} \
           -t ${DOCKER_REPO}:${{ steps.prepare.outputs.tag_name }} \
           -f docker/sealos/Dockerfile \
           .
           docker buildx build \
           --platform linux/amd64,linux/arm64 \
           --push \
+          --build-arg VERSION=${{ steps.prepare.outputs.tag_name }} \
+          --build-arg UNAME=${{ github.repository_owner }} \
           -t ${DOCKER_REPO}:latest \
           -f docker/sealos/Dockerfile \
           .
