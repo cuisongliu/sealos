@@ -15,6 +15,7 @@ All notable changes to this project will be documented in this file.
 - [CHANGELOG-4.1.4-rc3.md](./CHANGELOG-4.1.4-rc3.md)
 - [CHANGELOG-4.1.4-rc2.md](./CHANGELOG-4.1.4-rc2.md)
 - [CHANGELOG-4.1.4-rc1.md](./CHANGELOG-4.1.4-rc1.md)
+- [CHANGELOG-4.1.4-alpha3.md](./CHANGELOG-4.1.4-alpha3.md)
 - [CHANGELOG-4.1.4.md](./CHANGELOG-4.1.4.md)
 - [CHANGELOG-4.1.3-rc1.md](./CHANGELOG-4.1.3-rc1.md)
 - [CHANGELOG-4.1.3.md](./CHANGELOG-4.1.3.md)
