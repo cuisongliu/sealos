@@ -49,8 +49,8 @@ Sealos Boot is the core component of Sealos, mainly responsible for the lifecycl
 #### Binary Installation
 
 ```shell
-    curl -sfL  https://raw.githubusercontent.com/labring/sealos/v4.2.0-alpha3/scripts/install.sh \
-    | sh -s v4.2.0-alpha3 labring/sealos
+    curl -sfL  https://raw.githubusercontent.com/cuisongliu/sealos/v4.2.0-alpha3/scripts/install.sh \
+    | sh -s v4.2.0-alpha3 cuisongliu/sealos
 ```
 
 
@@ -90,6 +90,7 @@ sealos run labring/kubernetes:v1.25.0 labring/helm:v3.8.2 labring/calico:v3.24.1
 * 09aa95f0c36e11ade2851c2b328e70e704fa501c: fix: rm master taint in single model (#2860) (@mixinkexue)
 * ddabe65678f86343b40687d1059d9b87136a3d1c: fix: use assertion, avoid patching external interface (#2891) (@fengxsong)
 ### Other work
+* aa72e131e7a0dc28e0ed3d096489709cc6c4b2ae: Automated Changelog Update: Update directory for v4.2.0-alpha3 release (#2964) (@sealos-ci-robot)
 * 89a519b55ecf9c266f55953d5a84ed0270d1fda3: E2e/apply test workflow  (#2952) (@bxy4543)
 * 31e40627dc8db35dfa2681804b2b895c653bcc1e: Fix login ingress deploy (#2909) (@zzjin)
 * 9b7fd80b7659f57e87b2b9f09e8e103e575a2e14: Move deploy doc. (#2951) (@zzjin)
@@ -108,6 +109,7 @@ sealos run labring/kubernetes:v1.25.0 labring/helm:v3.8.2 labring/calico:v3.24.1
 * c781a29e50c45a57254c66eb7a09c25013d9ffd9: docs(main): add docs for user (#2929) (@cuisongliu)
 * e5a204154f236622aebcccc51ba10df5f32d84b0: docs(main): add image-cri-shim docs (#2880) (@cuisongliu)
 * de11f2b790efa907a4c62c4e934ba16a60e594a0: docs(main): add robot for sealos (#2959) (@cuisongliu)
+* 8679b13f08dce0c72cb1ae5bd66e05e0ca1474a0: docs(main): fix changelog for sealos (#2963) (@cuisongliu)
 * 42e06f9ea34e7db1edee1277f2050601ffd5940b: docs(main): support v1.27 docs (#2939) (@cuisongliu)
 * 60b038828da1ac2b0e915789b311104e05149d6c: docs(main): support v1.27 k8s (#2938) (@cuisongliu)
 * 8c4a998bb45d48396878a28ff690c286a95720d2: docs(main): sync code user and email (#2900) (@cuisongliu)
@@ -129,9 +131,9 @@ sealos run labring/kubernetes:v1.25.0 labring/helm:v3.8.2 labring/calico:v3.24.1
 * 7c66fd20cf6c424c4cc492bf119c38115d72c141: refactor: add back auto build and auto save abilities in `diff` command (#2906) (@fengxsong)
 * 187be92fc0d62898683db58725a6a9a79cf7bb76: refactor: diff command (#2879) (@fengxsong)
 
-**Full Changelog**: https://github.com/labring/sealos/compare/v4.2.0-alpha2...v4.2.0-alpha3
+**Full Changelog**: https://github.com/cuisongliu/sealos/compare/v4.2.0-alpha2...v4.2.0-alpha3
 
-See [the CHANGELOG](https://github.com/labring/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
+See [the CHANGELOG](https://github.com/cuisongliu/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
 
 ## Roadmap
 
@@ -147,4 +149,4 @@ We are very proud to introduce the two major functional modules of Sealos Cloud 
 
 Thank you for your support of Sealos🎉🎉.
 
-If you encounter any problems during use, please submit an issue in the [GitHub repository](https://github.com/labring/sealos) , and we will solve your problem as soon as possible.
+If you encounter any problems during use, please submit an issue in the [GitHub repository](https://github.com/cuisongliu/sealos) , and we will solve your problem as soon as possible.
