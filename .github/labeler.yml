@@ -66,4 +66,4 @@ area/frontend:
   - any: [ 'frontend/**/*' ]
 
 area/ci:
-  - any: [ '.github/**/*','scripts/**/*' ,'docker/**/*' ,'deploy/**/*' ,'.golangci.yml' ,'.goreleaser.yml','Makefile' ]
+  - any: [ './.github/**/*','scripts/**/*' ,'docker/**/*' ,'deploy/**/*' ,'.golangci.yml' ,'.goreleaser.yml','Makefile' ]
