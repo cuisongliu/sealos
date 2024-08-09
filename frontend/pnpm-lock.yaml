@@ -32,6 +32,15 @@ importers:
       framer-motion:
         specifier: ^10.16.4
         version: 10.16.5(react-dom@18.2.0)(react@18.2.0)
+      i18next:
+        specifier: ^23.11.5
+        version: 23.12.1
+      next-i18next:
+        specifier: ^15.3.0
+        version: 15.3.0(i18next@23.12.1)(next@13.5.6)(react-i18next@14.1.2)(react@18.2.0)
+      react-i18next:
+        specifier: ^14.1.2
+        version: 14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0)
       typescript:
         specifier: ^5.2.2
         version: 5.2.2
@@ -75,6 +84,9 @@ importers:
       '@emotion/styled':
         specifier: ^11.11.0
         version: 11.11.0(@emotion/react@11.11.1)(@types/react@18.2.37)(react@18.2.0)
+      '@hookform/resolvers':
+        specifier: ^3.9.0
+        version: 3.9.0(react-hook-form@7.48.2)
       '@kubernetes/client-node':
         specifier: ^0.18.1
         version: 0.18.1
@@ -121,8 +133,8 @@ importers:
         specifier: ^10.16.4
         version: 10.16.5(react-dom@18.2.0)(react@18.2.0)
       i18next:
-        specifier: ^22.5.1
-        version: 22.5.1
+        specifier: ^23.11.5
+        version: 23.12.1
       immer:
         specifier: ^10.0.2
         version: 10.0.3
@@ -154,8 +166,8 @@ importers:
         specifier: 13.3.0
         version: 13.3.0(@babel/core@7.23.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
       next-i18next:
-        specifier: ^13.3.0
-        version: 13.3.0(i18next@22.5.1)(next@13.3.0)(react-i18next@12.3.1)(react@18.2.0)
+        specifier: ^15.3.0
+        version: 15.3.0(i18next@23.12.1)(next@13.3.0)(react-i18next@14.1.2)(react@18.2.0)
       next-pwa:
         specifier: ^5.6.0
         version: 5.6.0(@babel/core@7.23.5)(next@13.3.0)(webpack@5.89.0)
@@ -190,8 +202,8 @@ importers:
         specifier: ^7.46.2
         version: 7.48.2(react@18.2.0)
       react-i18next:
-        specifier: ^12.3.1
-        version: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^14.1.2
+        version: 14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0)
       sass:
         specifier: ^1.68.0
         version: 1.69.5
@@ -201,12 +213,18 @@ importers:
       sharp:
         specifier: ^0.32.6
         version: 0.32.6
+      tencentcloud-sdk-nodejs:
+        specifier: 4.0.905
+        version: 4.0.905
       uuid:
         specifier: ^9.0.1
         version: 9.0.1
       xml2js:
         specifier: ^0.6.2
         version: 0.6.2
+      zod:
+        specifier: ^3.23.8
+        version: 3.23.8
       zustand:
         specifier: ^4.4.1
         version: 4.4.7(@types/react@18.2.37)(immer@10.0.3)(react@18.2.0)
@@ -398,8 +416,8 @@ importers:
         specifier: ^1.2.1
         version: 1.2.1
       i18next:
-        specifier: ^22.5.1
-        version: 22.5.1
+        specifier: ^23.11.5
+        version: 23.12.1
       immer:
         specifier: ^10.0.2
         version: 10.0.3
@@ -410,14 +428,14 @@ importers:
         specifier: 13.4.5
         version: 13.4.5(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
       next-i18next:
-        specifier: ^13.3.0
-        version: 13.3.0(i18next@22.5.1)(next@13.4.5)(react-i18next@12.3.1)(react@18.2.0)
+        specifier: ^15.3.0
+        version: 15.3.0(i18next@23.12.1)(next@13.4.5)(react-i18next@14.1.2)(react@18.2.0)
       react:
         specifier: 18.2.0
         version: 18.2.0
       react-i18next:
-        specifier: ^12.3.1
-        version: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^14.1.2
+        version: 14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0)
       sealos-desktop-sdk:
         specifier: workspace:*
         version: link:../../packages/client-sdk
@@ -513,8 +531,8 @@ importers:
         specifier: ^10.16.4
         version: 10.16.5(react-dom@18.2.0)(react@18.2.0)
       i18next:
-        specifier: ^22.5.1
-        version: 22.5.1
+        specifier: ^23.11.5
+        version: 23.12.1
       immer:
         specifier: ^9.0.21
         version: 9.0.21
@@ -537,8 +555,8 @@ importers:
         specifier: 13.1.6
         version: 13.1.6(@babel/core@7.23.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
       next-i18next:
-        specifier: ^13.3.0
-        version: 13.3.0(i18next@22.5.1)(next@13.1.6)(react-i18next@12.3.1)(react@18.2.0)
+        specifier: ^15.3.0
+        version: 15.3.0(i18next@23.12.1)(next@13.1.6)(react-i18next@14.1.2)(react@18.2.0)
       nprogress:
         specifier: ^0.2.0
         version: 0.2.0
@@ -555,8 +573,8 @@ importers:
         specifier: ^7.46.2
         version: 7.48.2(react@18.2.0)
       react-i18next:
-        specifier: ^12.3.1
-        version: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^14.1.2
+        version: 14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0)
       react-markdown:
         specifier: ^8.0.7
         version: 8.0.7(@types/react@18.2.37)(react@18.2.0)
@@ -682,8 +700,8 @@ importers:
         specifier: ^10.16.4
         version: 10.16.5(react-dom@18.2.0)(react@18.2.0)
       i18next:
-        specifier: ^22.5.1
-        version: 22.5.1
+        specifier: ^23.11.5
+        version: 23.12.1
       immer:
         specifier: ^9.0.21
         version: 9.0.21
@@ -718,8 +736,8 @@ importers:
         specifier: 13.1.6
         version: 13.1.6(@babel/core@7.23.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
       next-i18next:
-        specifier: ^13.3.0
-        version: 13.3.0(i18next@22.5.1)(next@13.1.6)(react-i18next@12.3.1)(react@18.2.0)
+        specifier: ^15.3.0
+        version: 15.3.0(i18next@23.12.1)(next@13.1.6)(react-i18next@14.1.2)(react@18.2.0)
       nprogress:
         specifier: ^0.2.0
         version: 0.2.0
@@ -739,8 +757,8 @@ importers:
         specifier: ^7.46.2
         version: 7.48.2(react@18.2.0)
       react-i18next:
-        specifier: ^12.3.1
-        version: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^14.1.2
+        version: 14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0)
       react-markdown:
         specifier: ^8.0.7
         version: 8.0.7(@types/react@18.2.37)(react@18.2.0)
@@ -875,8 +893,8 @@ importers:
         specifier: ^10.16.4
         version: 10.16.5(react-dom@18.2.0)(react@18.2.0)
       i18next:
-        specifier: ^22.5.1
-        version: 22.5.1
+        specifier: ^23.11.5
+        version: 23.12.1
       immer:
         specifier: ^9.0.21
         version: 9.0.21
@@ -896,8 +914,8 @@ importers:
         specifier: 13.1.6
         version: 13.1.6(@babel/core@7.23.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
       next-i18next:
-        specifier: ^13.3.0
-        version: 13.3.0(i18next@22.5.1)(next@13.1.6)(react-i18next@12.3.1)(react@18.2.0)
+        specifier: ^15.3.0
+        version: 15.3.0(i18next@23.12.1)(next@13.1.6)(react-i18next@14.1.2)(react@18.2.0)
       nprogress:
         specifier: ^0.2.0
         version: 0.2.0
@@ -917,8 +935,8 @@ importers:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
       react-i18next:
-        specifier: ^12.3.1
-        version: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^14.1.2
+        version: 14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0)
       sealos-desktop-sdk:
         specifier: workspace:*
         version: link:../../packages/client-sdk
@@ -1020,8 +1038,8 @@ importers:
         specifier: ^10.16.4
         version: 10.16.5(react-dom@18.2.0)(react@18.2.0)
       i18next:
-        specifier: ^22.5.1
-        version: 22.5.1
+        specifier: ^23.11.5
+        version: 23.12.1
       immer:
         specifier: ^9.0.21
         version: 9.0.21
@@ -1044,8 +1062,8 @@ importers:
         specifier: 13.1.6
         version: 13.1.6(@babel/core@7.23.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
       next-i18next:
-        specifier: ^13.3.0
-        version: 13.3.0(i18next@22.5.1)(next@13.1.6)(react-i18next@12.3.1)(react@18.2.0)
+        specifier: ^15.3.0
+        version: 15.3.0(i18next@23.12.1)(next@13.1.6)(react-i18next@14.1.2)(react@18.2.0)
       nprogress:
         specifier: ^0.2.0
         version: 0.2.0
@@ -1065,8 +1083,8 @@ importers:
         specifier: ^7.46.2
         version: 7.48.2(react@18.2.0)
       react-i18next:
-        specifier: ^12.3.1
-        version: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^14.1.2
+        version: 14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0)
       react-markdown:
         specifier: ^8.0.7
         version: 8.0.7(@types/react@18.2.37)(react@18.2.0)
@@ -1183,11 +1201,14 @@ importers:
         specifier: ^5.2.0
         version: 5.4.0
       i18next:
-        specifier: ^22.5.1
-        version: 22.5.1
+        specifier: ^23.11.5
+        version: 23.12.1
       immer:
         specifier: ^9.0.21
         version: 9.0.21
+      ini:
+        specifier: ^4.1.3
+        version: 4.1.3
       js-cookie:
         specifier: ^3.0.5
         version: 3.0.5
@@ -1213,8 +1234,8 @@ importers:
         specifier: 13.1.6
         version: 13.1.6(@babel/core@7.23.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
       next-i18next:
-        specifier: ^13.3.0
-        version: 13.3.0(i18next@22.5.1)(next@13.1.6)(react-i18next@12.3.1)(react@18.2.0)
+        specifier: ^15.3.0
+        version: 15.3.0(i18next@23.12.1)(next@13.1.6)(react-i18next@14.1.2)(react@18.2.0)
       nprogress:
         specifier: ^0.2.0
         version: 0.2.0
@@ -1234,8 +1255,8 @@ importers:
         specifier: ^7.46.2
         version: 7.48.2(react@18.2.0)
       react-i18next:
-        specifier: ^12.3.1
-        version: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^14.1.2
+        version: 14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0)
       react-markdown:
         specifier: ^8.0.7
         version: 8.0.7(@types/react@18.2.37)(react@18.2.0)
@@ -1258,6 +1279,9 @@ importers:
       '@svgr/webpack':
         specifier: ^6.5.1
         version: 6.5.1
+      '@types/ini':
+        specifier: ^4.1.1
+        version: 4.1.1
       '@types/js-cookie':
         specifier: ^3.0.4
         version: 3.0.6
@@ -1349,8 +1373,8 @@ importers:
         specifier: ^10.16.4
         version: 10.16.5(react-dom@18.2.0)(react@18.2.0)
       i18next:
-        specifier: ^22.5.1
-        version: 22.5.1
+        specifier: ^23.11.5
+        version: 23.12.1
       immer:
         specifier: ^9.0.21
         version: 9.0.21
@@ -1376,8 +1400,8 @@ importers:
         specifier: 13.1.6
         version: 13.1.6(@babel/core@7.23.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
       next-i18next:
-        specifier: ^13.3.0
-        version: 13.3.0(i18next@22.5.1)(next@13.1.6)(react-i18next@12.3.1)(react@18.2.0)
+        specifier: ^15.3.0
+        version: 15.3.0(i18next@23.12.1)(next@13.1.6)(react-i18next@14.1.2)(react@18.2.0)
       nprogress:
         specifier: ^0.2.0
         version: 0.2.0
@@ -1397,8 +1421,8 @@ importers:
         specifier: ^7.46.2
         version: 7.48.2(react@18.2.0)
       react-i18next:
-        specifier: ^12.3.1
-        version: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^14.1.2
+        version: 14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0)
       react-markdown:
         specifier: ^8.0.7
         version: 8.0.7(@types/react@18.2.37)(react@18.2.0)
@@ -1499,6 +1523,9 @@ importers:
       framer-motion:
         specifier: ^10.16.4
         version: 10.16.5(react-dom@18.2.0)(react@18.2.0)
+      i18next:
+        specifier: ^23.11.5
+        version: 23.12.1
       immer:
         specifier: ^10.0.3
         version: 10.0.3
@@ -1517,6 +1544,9 @@ importers:
       next:
         specifier: 13.5.4
         version: 13.5.4(react-dom@18.2.0)(react@18.2.0)
+      next-i18next:
+        specifier: ^15.3.0
+        version: 15.3.0(i18next@23.12.1)(next@13.5.4)(react-i18next@14.1.2)(react@18.2.0)
       nprogress:
         specifier: ^0.2.0
         version: 0.2.0
@@ -1529,6 +1559,9 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
+      react-i18next:
+        specifier: ^14.1.2
+        version: 14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0)
       react-icons:
         specifier: ^5.0.1
         version: 5.0.1(react@18.2.0)
@@ -1672,8 +1705,8 @@ importers:
         specifier: ^10.16.4
         version: 10.16.5(react-dom@18.2.0)(react@18.2.0)
       i18next:
-        specifier: ^22.5.1
-        version: 22.5.1
+        specifier: ^23.11.5
+        version: 23.12.1
       immer:
         specifier: ^9.0.21
         version: 9.0.21
@@ -1702,8 +1735,8 @@ importers:
         specifier: 13.1.6
         version: 13.1.6(@babel/core@7.23.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
       next-i18next:
-        specifier: ^13.3.0
-        version: 13.3.0(i18next@22.5.1)(next@13.1.6)(react-i18next@12.3.1)(react@18.2.0)
+        specifier: ^15.3.0
+        version: 15.3.0(i18next@23.12.1)(next@13.1.6)(react-i18next@14.1.2)(react@18.2.0)
       node-cron:
         specifier: ^3.0.3
         version: 3.0.3
@@ -1726,8 +1759,8 @@ importers:
         specifier: ^7.46.2
         version: 7.48.2(react@18.2.0)
       react-i18next:
-        specifier: ^12.3.1
-        version: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^14.1.2
+        version: 14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0)
       react-markdown:
         specifier: ^8.0.7
         version: 8.0.7(@types/react@18.2.37)(react@18.2.0)
@@ -1844,8 +1877,8 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0
       i18next:
-        specifier: ^22.5.1
-        version: 22.5.1
+        specifier: ^23.11.5
+        version: 23.12.1
       immer:
         specifier: ^10.0.3
         version: 10.0.3
@@ -1862,8 +1895,8 @@ importers:
         specifier: 13.5.6
         version: 13.5.6(@babel/core@7.23.5)(react-dom@18.2.0)(react@18.2.0)
       next-i18next:
-        specifier: ^13.3.0
-        version: 13.3.0(i18next@22.5.1)(next@13.5.6)(react-i18next@12.3.1)(react@18.2.0)
+        specifier: ^15.3.0
+        version: 15.3.0(i18next@23.12.1)(next@13.5.6)(react-i18next@14.1.2)(react@18.2.0)
       react:
         specifier: ^18
         version: 18.2.0
@@ -1877,8 +1910,8 @@ importers:
         specifier: ^7.46.2
         version: 7.48.2(react@18.2.0)
       react-i18next:
-        specifier: ^12.3.1
-        version: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^14.1.2
+        version: 14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0)
       react-markdown:
         specifier: ^8.0.7
         version: 8.0.7(@types/react@18.2.37)(react@18.2.0)
@@ -1988,6 +2021,9 @@ importers:
       cron-parser:
         specifier: ^4.9.0
         version: 4.9.0
+      croner:
+        specifier: ^8.1.0
+        version: 8.1.0
       cronstrue:
         specifier: ^2.32.0
         version: 2.44.0
@@ -2004,8 +2040,8 @@ importers:
         specifier: ^5.2.0
         version: 5.4.0
       i18next:
-        specifier: ^22.5.1
-        version: 22.5.1
+        specifier: ^23.11.5
+        version: 23.12.1
       immer:
         specifier: ^9.0.21
         version: 9.0.21
@@ -2028,11 +2064,8 @@ importers:
         specifier: 13.1.6
         version: 13.1.6(@babel/core@7.23.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
       next-i18next:
-        specifier: ^13.3.0
-        version: 13.3.0(i18next@22.5.1)(next@13.1.6)(react-i18next@12.3.1)(react@18.2.0)
-      node-cron:
-        specifier: ^3.0.3
-        version: 3.0.3
+        specifier: ^15.3.0
+        version: 15.3.0(i18next@23.12.1)(next@13.1.6)(react-i18next@14.1.2)(react@18.2.0)
       nprogress:
         specifier: ^0.2.0
         version: 0.2.0
@@ -2052,8 +2085,8 @@ importers:
         specifier: ^7.46.2
         version: 7.48.2(react@18.2.0)
       react-i18next:
-        specifier: ^12.3.1
-        version: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^14.1.2
+        version: 14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0)
       react-markdown:
         specifier: ^8.0.7
         version: 8.0.7(@types/react@18.2.37)(react@18.2.0)
@@ -2155,8 +2188,8 @@ importers:
         specifier: 13.2.4
         version: 13.2.4(eslint@8.36.0)(typescript@5.2.2)
       i18next:
-        specifier: ^22.5.1
-        version: 22.5.1
+        specifier: ^23.11.5
+        version: 23.12.1
       immer:
         specifier: ^9.0.21
         version: 9.0.21
@@ -2173,8 +2206,8 @@ importers:
         specifier: 13.2.4
         version: 13.2.4(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
       next-i18next:
-        specifier: ^13.3.0
-        version: 13.3.0(i18next@22.5.1)(next@13.2.4)(react-i18next@12.3.1)(react@18.2.0)
+        specifier: ^15.3.0
+        version: 15.3.0(i18next@23.12.1)(next@13.2.4)(react-i18next@14.1.2)(react@18.2.0)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -2182,8 +2215,8 @@ importers:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
       react-i18next:
-        specifier: ^12.3.1
-        version: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^14.1.2
+        version: 14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0)
       sealos-desktop-sdk:
         specifier: workspace:*
         version: link:../../packages/client-sdk
@@ -2273,8 +2306,8 @@ importers:
         specifier: ^10.16.4
         version: 10.16.5(react-dom@18.2.0)(react@18.2.0)
       i18next:
-        specifier: ^22.5.1
-        version: 22.5.1
+        specifier: ^23.11.5
+        version: 23.12.1
       immer:
         specifier: ^9.0.21
         version: 9.0.21
@@ -2309,8 +2342,8 @@ importers:
         specifier: 13.1.6
         version: 13.1.6(@babel/core@7.23.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
       next-i18next:
-        specifier: ^13.3.0
-        version: 13.3.0(i18next@22.5.1)(next@13.1.6)(react-i18next@12.3.1)(react@18.2.0)
+        specifier: ^15.3.0
+        version: 15.3.0(i18next@23.12.1)(next@13.1.6)(react-i18next@14.1.2)(react@18.2.0)
       nprogress:
         specifier: ^0.2.0
         version: 0.2.0
@@ -2330,8 +2363,8 @@ importers:
         specifier: ^7.46.2
         version: 7.48.2(react@18.2.0)
       react-i18next:
-        specifier: ^12.3.1
-        version: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^14.1.2
+        version: 14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0)
       react-markdown:
         specifier: ^8.0.7
         version: 8.0.7(@types/react@18.2.37)(react@18.2.0)
@@ -6960,6 +6993,14 @@ packages:
     engines: {node: '>=16.15'}
     dev: false
 
+  /@hookform/resolvers@3.9.0(react-hook-form@7.48.2):
+    resolution: {integrity: sha512-bU0Gr4EepJ/EQsH/IwEzYLsT/PEj5C0ynLQ4m+GSHS+xKH4TfSelhluTgOaoc4kA5s7eCsQbM4wvZLzELmWzUg==}
+    peerDependencies:
+      react-hook-form: ^7.0.0
+    dependencies:
+      react-hook-form: 7.48.2(react@18.2.0)
+    dev: false
+
   /@humanwhocodes/config-array@0.11.13:
     resolution: {integrity: sha512-JSBDMiDKSzQVngfRjOdFXgFfklaXI4K9nLF49Auh21lmBWRLIK3+xTErTWD4KU54pb6coM6ESE7Awz/FNU3zgQ==}
     engines: {node: '>=10.10.0'}
@@ -9720,6 +9761,10 @@ packages:
   /@types/http-errors@2.0.4:
     resolution: {integrity: sha512-D0CFMMtydbJAegzOyHjtiKPLlvnm3iTZyZRSZoLq2mRhDdmLfIWOCYPfQJ4cu2erKghU++QvjcUjp/5h7hESpA==}
 
+  /@types/ini@4.1.1:
+    resolution: {integrity: sha512-MIyNUZipBTbyUNnhvuXJTY7B6qNI78meck9Jbv3wk0OgNwRyOOVEKDutAkOs1snB/tx0FafyR6/SN4Ps0hZPeg==}
+    dev: true
+
   /@types/istanbul-lib-coverage@2.0.6:
     resolution: {integrity: sha512-2QF/t/auWm0lsy8XtKVPG19v3sSOQlJe/YHZgfjb/KBBHOGSV+J2q/S671rcq9uTBrLAXmZpqJiaQbMT+zNU1w==}
     dev: true
@@ -10435,7 +10480,6 @@ packages:
       debug: 4.3.4
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /aggregate-error@3.1.0:
     resolution: {integrity: sha512-4I7Td01quW/RpocfNayFdFVk1qSuoh0E7JrbRJ16nH01HhKFQ88INq9Sd+nd72zqRySlr9BmDA8xlEJ6vJMrYA==}
@@ -11053,6 +11097,10 @@ packages:
 
   /big.js@5.2.2:
     resolution: {integrity: sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==}
+
+  /bignumber.js@9.1.2:
+    resolution: {integrity: sha512-2/mKyZH9K85bzOEfhXDBFZTGd1CTs+5IHpeFQo9luiBG7hghdC851Pj2WAhb6E3R6b9tZj/XKhbg4fum+Kepug==}
+    dev: false
 
   /binary-extensions@2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
@@ -14381,6 +14429,15 @@ packages:
       combined-stream: 1.0.8
       mime-types: 2.1.35
 
+  /form-data@3.0.1:
+    resolution: {integrity: sha512-RHkBKtLWUVwd7SqRIvCZMEvAMoGUp0XU+seQiZejj0COz3RI3hWP4sCv3gZWWLjJTd7rGwcsF5eKZGii0r/hbg==}
+    engines: {node: '>= 6'}
+    dependencies:
+      asynckit: 0.4.0
+      combined-stream: 1.0.8
+      mime-types: 2.1.35
+    dev: false
+
   /form-data@4.0.0:
     resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
     engines: {node: '>= 6'}
@@ -15018,7 +15075,6 @@ packages:
       debug: 4.3.4
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /httpx@2.3.1:
     resolution: {integrity: sha512-l5rcAoKP8A9XOIlcIA87Wt9A7AX2fgOslHOF4WB5Q24y/1+aeH8b7c7NKfm+Bcf+h0u4FHNtLCriC4mAFmCYgg==}
@@ -15037,14 +15093,14 @@ packages:
     resolution: {integrity: sha512-ygGZLjmXfPHj+ZWh6LwbC37l43MhfztxetbFCoYTM2VjkIUpeHgSNn7QIyVFj7YQ1Wl9Cbw5sholVJPzWvC2MQ==}
     dev: false
 
-  /i18next-fs-backend@2.3.0:
-    resolution: {integrity: sha512-N0SS2WojoVIh2x/QkajSps8RPKzXqryZsQh12VoFY4cLZgkD+62EPY2fY+ZjkNADu8xA5I5EadQQXa8TXBKN3w==}
+  /i18next-fs-backend@2.3.1:
+    resolution: {integrity: sha512-tvfXskmG/9o+TJ5Fxu54sSO5OkY6d+uMn+K6JiUGLJrwxAVfer+8V3nU8jq3ts9Pe5lXJv4b1N7foIjJ8Iy2Gg==}
     dev: false
 
-  /i18next@22.5.1:
-    resolution: {integrity: sha512-8TGPgM3pAD+VRsMtUMNknRz3kzqwp/gPALrWMsDnmC1mKqJwpWyooQRLMcbTwq8z8YwSmuj+ZYvc+xCuEpkssA==}
+  /i18next@23.12.1:
+    resolution: {integrity: sha512-l4y291ZGRgUhKuqVSiqyuU2DDzxKStlIWSaoNBR4grYmh0X+pRYbFpTMs3CnJ5ECKbOI8sQcJ3PbTUfLgPRaMA==}
     dependencies:
-      '@babel/runtime': 7.23.4
+      '@babel/runtime': 7.24.0
     dev: false
 
   /iconv-lite@0.4.4:
@@ -15125,6 +15181,11 @@ packages:
 
   /ini@1.3.8:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
+    dev: false
+
+  /ini@4.1.3:
+    resolution: {integrity: sha512-X7rqawQBvfdjS10YU1y1YVreA3SsLrW9dX2CewP2EbBJM4ypVNLDkO5y04gejPwKIY9lR+7r9gn3rFPt/kmWFg==}
+    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     dev: false
 
   /inline-style-parser@0.1.1:
@@ -16225,6 +16286,12 @@ packages:
     resolution: {integrity: sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA==}
     engines: {node: '>=4'}
     hasBin: true
+
+  /json-bigint@1.0.0:
+    resolution: {integrity: sha512-SiPv/8VpZuWbvLSMtTDU8hEfrZWg/mH/nV/b4o0CYbSxu1UIQPLdwKOCIyLQX+VIPO5vrLX3i8qtqFyhdPSUSQ==}
+    dependencies:
+      bignumber.js: 9.1.2
+    dev: false
 
   /json-buffer@3.0.1:
     resolution: {integrity: sha512-4bV5BfR2mqfQTJm+V5tPPdf+ZpuhiIvTuAB5g8kcrXOZpTT/QwwVRWBywX1ozr6lEuPdbHxwaJlm9G6mI2sfSQ==}
@@ -17490,104 +17557,124 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: false
 
-  /next-i18next@13.3.0(i18next@22.5.1)(next@13.1.6)(react-i18next@12.3.1)(react@18.2.0):
-    resolution: {integrity: sha512-X4kgi51BCOoGdKbv87eZ8OU7ICQDg5IP+T5fNjqDY3os9ea0OKTY4YpAiVFiwcI9XimcUmSPbKO4a9jFUyYSgg==}
+  /next-i18next@15.3.0(i18next@23.12.1)(next@13.1.6)(react-i18next@14.1.2)(react@18.2.0):
+    resolution: {integrity: sha512-bq7Cc9XJFcmGOCLnyEtHaeJ3+JJNsI/8Pkj9BaHAnhm4sZ9vNNC4ZsaqYnlRZ7VH5ypSo73fEqLK935jLsmCvQ==}
     engines: {node: '>=14'}
     peerDependencies:
-      i18next: ^22.0.6
+      i18next: '>= 23.7.13'
       next: '>= 12.0.0'
       react: '>= 17.0.2'
-      react-i18next: ^12.2.0
+      react-i18next: '>= 13.5.0'
     dependencies:
       '@babel/runtime': 7.24.0
       '@types/hoist-non-react-statics': 3.3.5
       core-js: 3.33.3
       hoist-non-react-statics: 3.3.2
-      i18next: 22.5.1
-      i18next-fs-backend: 2.3.0
+      i18next: 23.12.1
+      i18next-fs-backend: 2.3.1
       next: 13.1.6(@babel/core@7.23.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
       react: 18.2.0
-      react-i18next: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+      react-i18next: 14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
-  /next-i18next@13.3.0(i18next@22.5.1)(next@13.2.4)(react-i18next@12.3.1)(react@18.2.0):
-    resolution: {integrity: sha512-X4kgi51BCOoGdKbv87eZ8OU7ICQDg5IP+T5fNjqDY3os9ea0OKTY4YpAiVFiwcI9XimcUmSPbKO4a9jFUyYSgg==}
+  /next-i18next@15.3.0(i18next@23.12.1)(next@13.2.4)(react-i18next@14.1.2)(react@18.2.0):
+    resolution: {integrity: sha512-bq7Cc9XJFcmGOCLnyEtHaeJ3+JJNsI/8Pkj9BaHAnhm4sZ9vNNC4ZsaqYnlRZ7VH5ypSo73fEqLK935jLsmCvQ==}
     engines: {node: '>=14'}
     peerDependencies:
-      i18next: ^22.0.6
+      i18next: '>= 23.7.13'
       next: '>= 12.0.0'
       react: '>= 17.0.2'
-      react-i18next: ^12.2.0
+      react-i18next: '>= 13.5.0'
     dependencies:
       '@babel/runtime': 7.24.0
       '@types/hoist-non-react-statics': 3.3.5
       core-js: 3.33.3
       hoist-non-react-statics: 3.3.2
-      i18next: 22.5.1
-      i18next-fs-backend: 2.3.0
+      i18next: 23.12.1
+      i18next-fs-backend: 2.3.1
       next: 13.2.4(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
       react: 18.2.0
-      react-i18next: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+      react-i18next: 14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
-  /next-i18next@13.3.0(i18next@22.5.1)(next@13.3.0)(react-i18next@12.3.1)(react@18.2.0):
-    resolution: {integrity: sha512-X4kgi51BCOoGdKbv87eZ8OU7ICQDg5IP+T5fNjqDY3os9ea0OKTY4YpAiVFiwcI9XimcUmSPbKO4a9jFUyYSgg==}
+  /next-i18next@15.3.0(i18next@23.12.1)(next@13.3.0)(react-i18next@14.1.2)(react@18.2.0):
+    resolution: {integrity: sha512-bq7Cc9XJFcmGOCLnyEtHaeJ3+JJNsI/8Pkj9BaHAnhm4sZ9vNNC4ZsaqYnlRZ7VH5ypSo73fEqLK935jLsmCvQ==}
     engines: {node: '>=14'}
     peerDependencies:
-      i18next: ^22.0.6
+      i18next: '>= 23.7.13'
       next: '>= 12.0.0'
       react: '>= 17.0.2'
-      react-i18next: ^12.2.0
+      react-i18next: '>= 13.5.0'
     dependencies:
       '@babel/runtime': 7.24.0
       '@types/hoist-non-react-statics': 3.3.5
       core-js: 3.33.3
       hoist-non-react-statics: 3.3.2
-      i18next: 22.5.1
-      i18next-fs-backend: 2.3.0
+      i18next: 23.12.1
+      i18next-fs-backend: 2.3.1
       next: 13.3.0(@babel/core@7.23.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
       react: 18.2.0
-      react-i18next: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+      react-i18next: 14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
-  /next-i18next@13.3.0(i18next@22.5.1)(next@13.4.5)(react-i18next@12.3.1)(react@18.2.0):
-    resolution: {integrity: sha512-X4kgi51BCOoGdKbv87eZ8OU7ICQDg5IP+T5fNjqDY3os9ea0OKTY4YpAiVFiwcI9XimcUmSPbKO4a9jFUyYSgg==}
+  /next-i18next@15.3.0(i18next@23.12.1)(next@13.4.5)(react-i18next@14.1.2)(react@18.2.0):
+    resolution: {integrity: sha512-bq7Cc9XJFcmGOCLnyEtHaeJ3+JJNsI/8Pkj9BaHAnhm4sZ9vNNC4ZsaqYnlRZ7VH5ypSo73fEqLK935jLsmCvQ==}
     engines: {node: '>=14'}
     peerDependencies:
-      i18next: ^22.0.6
+      i18next: '>= 23.7.13'
       next: '>= 12.0.0'
       react: '>= 17.0.2'
-      react-i18next: ^12.2.0
+      react-i18next: '>= 13.5.0'
     dependencies:
       '@babel/runtime': 7.24.0
       '@types/hoist-non-react-statics': 3.3.5
       core-js: 3.33.3
       hoist-non-react-statics: 3.3.2
-      i18next: 22.5.1
-      i18next-fs-backend: 2.3.0
+      i18next: 23.12.1
+      i18next-fs-backend: 2.3.1
       next: 13.4.5(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
       react: 18.2.0
-      react-i18next: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+      react-i18next: 14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
-  /next-i18next@13.3.0(i18next@22.5.1)(next@13.5.6)(react-i18next@12.3.1)(react@18.2.0):
-    resolution: {integrity: sha512-X4kgi51BCOoGdKbv87eZ8OU7ICQDg5IP+T5fNjqDY3os9ea0OKTY4YpAiVFiwcI9XimcUmSPbKO4a9jFUyYSgg==}
+  /next-i18next@15.3.0(i18next@23.12.1)(next@13.5.4)(react-i18next@14.1.2)(react@18.2.0):
+    resolution: {integrity: sha512-bq7Cc9XJFcmGOCLnyEtHaeJ3+JJNsI/8Pkj9BaHAnhm4sZ9vNNC4ZsaqYnlRZ7VH5ypSo73fEqLK935jLsmCvQ==}
     engines: {node: '>=14'}
     peerDependencies:
-      i18next: ^22.0.6
+      i18next: '>= 23.7.13'
       next: '>= 12.0.0'
       react: '>= 17.0.2'
-      react-i18next: ^12.2.0
+      react-i18next: '>= 13.5.0'
     dependencies:
       '@babel/runtime': 7.24.0
       '@types/hoist-non-react-statics': 3.3.5
       core-js: 3.33.3
       hoist-non-react-statics: 3.3.2
-      i18next: 22.5.1
-      i18next-fs-backend: 2.3.0
+      i18next: 23.12.1
+      i18next-fs-backend: 2.3.1
+      next: 13.5.4(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-i18next: 14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0)
+    dev: false
+
+  /next-i18next@15.3.0(i18next@23.12.1)(next@13.5.6)(react-i18next@14.1.2)(react@18.2.0):
+    resolution: {integrity: sha512-bq7Cc9XJFcmGOCLnyEtHaeJ3+JJNsI/8Pkj9BaHAnhm4sZ9vNNC4ZsaqYnlRZ7VH5ypSo73fEqLK935jLsmCvQ==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      i18next: '>= 23.7.13'
+      next: '>= 12.0.0'
+      react: '>= 17.0.2'
+      react-i18next: '>= 13.5.0'
+    dependencies:
+      '@babel/runtime': 7.24.0
+      '@types/hoist-non-react-statics': 3.3.5
+      core-js: 3.33.3
+      hoist-non-react-statics: 3.3.2
+      i18next: 23.12.1
+      i18next-fs-backend: 2.3.1
       next: 13.5.6(@babel/core@7.23.5)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
-      react-i18next: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+      react-i18next: 14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
   /next-pwa@5.6.0(@babel/core@7.23.5)(next@13.3.0)(webpack@5.89.0):
@@ -17888,6 +17975,18 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       uuid: 8.3.2
+    dev: false
+
+  /node-fetch@2.7.0:
+    resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
+    engines: {node: 4.x || >=6.0.0}
+    peerDependencies:
+      encoding: ^0.1.0
+    peerDependenciesMeta:
+      encoding:
+        optional: true
+    dependencies:
+      whatwg-url: 5.0.0
     dev: false
 
   /node-int64@0.4.0:
@@ -19365,10 +19464,10 @@ packages:
       react: 18.2.0
     dev: false
 
-  /react-i18next@12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-5v8E2XjZDFzK7K87eSwC7AJcAkcLt5xYZ4+yTPDAW1i7C93oOY1dnr4BaQM7un4Hm+GmghuiPvevWwlca5PwDA==}
+  /react-i18next@14.1.2(i18next@23.12.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-FSIcJy6oauJbGEXfhUgVeLzvWBhIBIS+/9c6Lj4niwKZyGaGb4V4vUbATXSlsHJDXXB+ociNxqFNiFuV1gmoqg==}
     peerDependencies:
-      i18next: '>= 19.0.0'
+      i18next: '>= 23.2.3'
       react: '>= 16.8.0'
       react-dom: '*'
       react-native: '*'
@@ -19378,9 +19477,9 @@ packages:
       react-native:
         optional: true
     dependencies:
-      '@babel/runtime': 7.23.4
+      '@babel/runtime': 7.24.0
       html-parse-stringify: 3.0.1
-      i18next: 22.5.1
+      i18next: 23.12.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -20983,6 +21082,23 @@ packages:
       unique-string: 2.0.0
     dev: false
 
+  /tencentcloud-sdk-nodejs@4.0.905:
+    resolution: {integrity: sha512-oXZygzjI/smJD1I9amigZ5vukur60ZUhuc5St8gv+3krGg3vDBccHWgEnXB/OlJVCcnbmb40mzsYfTkDOtSccQ==}
+    engines: {node: '>=10'}
+    dependencies:
+      form-data: 3.0.1
+      get-stream: 6.0.1
+      https-proxy-agent: 5.0.1
+      is-stream: 2.0.1
+      json-bigint: 1.0.0
+      node-fetch: 2.7.0
+      tslib: 1.13.0
+      uuid: 9.0.1
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+    dev: false
+
   /terser-webpack-plugin@5.3.9(webpack@5.89.0):
     resolution: {integrity: sha512-ZuXsqE07EcggTWQjXUj+Aot/OMcD0bMKGgF63f7UxYcu5/AJF53aIpK1YoP5xR9l6s/Hy2b+t1AM0bLNPRuhwA==}
     engines: {node: '>= 10.13.0'}
@@ -21166,6 +21282,10 @@ packages:
       url-parse: 1.5.10
     dev: true
 
+  /tr46@0.0.3:
+    resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
+    dev: false
+
   /tr46@1.0.1:
     resolution: {integrity: sha512-dTpowEjclQ7Kgx5SdBkqRzVhERQXov8/l9Ft9dVM9fmg0W0KQSVaXX9T4i6twCPNtYiZM53lpSSUAwJbFPOHxA==}
     dependencies:
@@ -21210,6 +21330,10 @@ packages:
       json5: 1.0.2
       minimist: 1.2.8
       strip-bom: 3.0.0
+
+  /tslib@1.13.0:
+    resolution: {integrity: sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==}
+    dev: false
 
   /tslib@1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
@@ -21799,6 +21923,10 @@ packages:
     resolution: {integrity: sha512-/TllNPjGenDwjE67M16TD9ALwuY847/zIoH7r+e5rSeG4kEa3HiMTAsUDj80yzIzhtshkv215KfsnQ/RXR3nVA==}
     dev: false
 
+  /webidl-conversions@3.0.1:
+    resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
+    dev: false
+
   /webidl-conversions@4.0.2:
     resolution: {integrity: sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==}
     dev: false
@@ -21899,6 +22027,13 @@ packages:
     dependencies:
       tr46: 3.0.0
       webidl-conversions: 7.0.0
+
+  /whatwg-url@5.0.0:
+    resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
+    dependencies:
+      tr46: 0.0.3
+      webidl-conversions: 3.0.1
+    dev: false
 
   /whatwg-url@7.1.0:
     resolution: {integrity: sha512-WUu7Rg1DroM7oQvGWfOiAK21n74Gg+T4elXEQYkOhtyLeWiJFoOGLXPKI/9gzIie9CtwVLm8wtw6YJdKyxSjeg==}
@@ -22329,6 +22464,10 @@ packages:
 
   /zod@3.21.4:
     resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
+    dev: false
+
+  /zod@3.23.8:
+    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
     dev: false
 
   /zrender@5.4.4:
