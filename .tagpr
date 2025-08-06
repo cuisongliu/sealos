@@ -1,0 +1,6 @@
+[tagpr]
+    vPrefix = true
+    releaseBranch = new-tagpr
+    versionFile = .tagpr
+    release = false
+    changelog = true
