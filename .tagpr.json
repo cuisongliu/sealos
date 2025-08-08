@@ -1,0 +1,6 @@
+{
+    "name": "sealos",
+    "version": "v5.1.0-beta1",
+    "command": "bash scripts/changelog.sh v5.1.0-beta1",
+    "releaseBranch": "new-tagpr"
+}
