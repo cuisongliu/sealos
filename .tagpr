@@ -1,0 +1,7 @@
+[tagpr]
+    vPrefix = true
+    releaseBranch = new-tagpr
+    versionFile = .tagpr
+    command = bash scripts/changelog.sh v5.1.0-beta1
+    release = false
+    changelog = true
