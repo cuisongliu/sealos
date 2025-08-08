@@ -12,29 +12,18 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-REPO=$1
-TAG=$2
+TAG=$1
 
-if [ -z "$REPO" ]; then
-   REPO="$GITHUB_REPOSITORY"
+if [ -z "${TAG}" ]; then
+    echo "Usage: $0 <repo> <tag>"
+    exit 1
 fi
 
-if [ -z "$TAG" ]; then
-   TAG=$(git describe --abbrev=0 --tags)
-fi
-set -ex
-# Fetch the release data using the GitHub API
-release_data=$(curl -s https://api.github.com/repos/"${REPO}"/releases/tags/"${TAG}")
-
-# Extract the release notes using jq
-release_notes=$(echo "$release_data" | jq -r '.body')
-
-if [ "$release_notes" == 'null' ]; then
-   echo "No release notes found for tag $TAG"
-   exit 1
+if [ ! -d CHANGELOG ]; then
+    mkdir CHANGELOG
 fi
 
-echo "$release_notes" > CHANGELOG/CHANGELOG-"${TAG#v}".md
+git-chglog --output CHANGELOG/CHANGELOG-"${TAG#v}".md --next-tag ${TAG} ${TAG}
 
 echo "# Changelog" > CHANGELOG/CHANGELOG.md
 echo -e "\nAll notable changes to this project will be documented in this file.\n" >> CHANGELOG/CHANGELOG.md
