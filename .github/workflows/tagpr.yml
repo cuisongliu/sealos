@@ -1,0 +1,36 @@
+name: 🚀 Tagpr for GitHub Actions
+on:
+  push:
+    branches:
+      - new-tagpr
+jobs:
+  tagpr:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - run: | 
+          wget -q https://github.com/git-chglog/git-chglog/releases/download/v0.15.4/git-chglog_0.15.4_linux_amd64.tar.gz
+          tar -zxvf git-chglog_0.15.4_linux_amd64.tar.gz git-chglog
+          sudo mv git-chglog /usr/local/bin/
+          git-chglog --version
+        name: Install git-chglog
+      - uses: Songmu/tagpr@v1
+        id: tagpr
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: |
+          echo "tag: ${{ steps.tagpr.outputs.tag }}"
+        name: Print git-chglog tag
+      - name: Trigger Release Workflow(only when tagged)
+        uses: actions/github-script@v6
+        if: "steps.tagpr.outputs.tag != ''"
+        with:
+          script: |
+            github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'release.yml',
+              ref: "refs/tags/${{ steps.tagpr.outputs.tag }}",
+            })
