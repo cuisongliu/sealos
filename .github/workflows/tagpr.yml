@@ -78,3 +78,13 @@ jobs:
               workflow_id: 'release.yml',
               ref: "refs/tags/${{ steps.tagpr.outputs.version }}",
             })
+            github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'cloud-release.yml',
+              ref: "refs/tags/${{ steps.tagpr.outputs.version }}",
+              inputs: {
+                  tag: "${{ github.ref_name }}",
+                  build_offline_tar_only: false
+              }
+            })
