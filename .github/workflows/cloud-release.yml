@@ -87,28 +87,17 @@ jobs:
 
   release-cloud:
     if: ${{ inputs.build_offline_tar_only == false }}
-    runs-on: ubuntu-24.04
     needs:
       - save-sealos
       - release-controllers
       - release-frontends
       - release-service
-    steps:
-      - name: Trigger Cloud Release Workflow(only when tagged)
-        uses: actions/github-script@v6
-        with:
-          script: |
-            github.rest.actions.createWorkflowDispatch({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              workflow_id: 'cloud.yml',
-              ref: "refs/tags/${{ github.ref_name }}",
-              inputs: {
-                  push_image: true,
-                  push_image_tag: "${{ inputs.tag }}",
-                  build_from: "${{ inputs.tag }}"
-              }
-            })
+    uses: ./.github/workflows/cloud.yml
+    with:
+      push_image: true
+      push_image_tag: ${{ inputs.tag }}
+      build_from: ${{ inputs.tag }}
+    secrets: inherit
 
   release-amd-offline-tar:
     needs:
