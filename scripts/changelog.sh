@@ -52,3 +52,5 @@ if [[ ${TAG} =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
     sed -i "s#${PRE_VERSION}#${TAG}#g" scripts/cloud/install.sh
     sed -i "s#${PRE_VERSION}#${TAG}#g" scripts/cloud/build-offline-tar.sh
 fi
+
+cp CHANGELOG/CHANGELOG-"${TAG#v}".md CHANGELOG/CHANGELOG-latest.md
