@@ -41,7 +41,7 @@ jobs:
       - name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v6
         with:
-          args: release --clean --release-notes=CHANGELOG/CHANGELOG-latest.md
+          args: release --clean --release-notes=../CHANGELOG/CHANGELOG-latest.md
           workdir: ./lifecycle
         env:
           USERNAME: ${{ github.repository_owner }}
