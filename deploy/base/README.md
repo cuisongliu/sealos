@@ -82,8 +82,7 @@ sealos run ghcr.io/labring/sealos/helm:v3.16.2
 
 **Changes:**
 - Base on helm chart from [higress.io](https://higress.io/helm-charts)
-- Added condition for higress console
-- Added redis cache image values
+- Added condition for higress console (charts/higress/Chart.yaml line 10: `condition: console.enabled`)
 - Custom configuration files for cloud deployment
 
 **Environment Variables:**
@@ -151,7 +150,7 @@ sealos run ghcr.io/labring/sealos/metrics-server:v0.6.4
 
 **Environment Variables:**
 - `OPENEBS_STORAGE_PREFIX` (default: `"/var/openebs"`) - Base directory for storage
-- `OPENEBS_USE_LVM` (default: `"false"`) - Enable LVM local PV instead of hostpath
+- `OPENEBS_USE_LVM` (default: `"false"`) - When `OPENEBS_USE_LVM=true`, disables localpv and disables default storageclass. When `OPENEBS_USE_LVM=false`, enables localpv and enables default storageclass, and automatically creates an `openebs-backup` storageclass
 - `NAME` (default: `"openebs"`) - Helm release name
 - `NAMESPACE` (default: `"openebs"`) - Kubernetes namespace
 - `HELM_OPTS` - Additional Helm options
