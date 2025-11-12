@@ -334,7 +334,7 @@ func GenerateStartupVolume(devbox *devboxv1alpha1.Devbox) corev1.Volume {
 				LocalObjectReference: corev1.LocalObjectReference{
 					Name: devbox.Name,
 				},
-				DefaultMode: ptr.To(int32(755)),
+				DefaultMode: ptr.To(int32(0755)),
 			},
 		},
 	}
