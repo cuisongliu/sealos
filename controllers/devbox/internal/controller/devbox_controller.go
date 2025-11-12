@@ -588,6 +588,10 @@ func (r *DevboxReconciler) removeAll(ctx context.Context, devbox *devboxv1alpha1
 	if err := r.deleteResourcesByLabels(ctx, &corev1.Service{}, devbox.Namespace, recLabels); err != nil {
 		return err
 	}
+	// Delete Configmap
+	if err := r.deleteResourcesByLabels(ctx, &corev1.ConfigMap{}, devbox.Namespace, recLabels); err != nil {
+		return err
+	}
 	// Delete Secret
 	return r.deleteResourcesByLabels(ctx, &corev1.Secret{}, devbox.Namespace, recLabels)
 }
