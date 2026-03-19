@@ -1,5 +1,5 @@
 #!/bin/bash
-set -ex
+set -e
 
 HELM_OPTS=${HELM_OPTS:-""}
 RELEASE_NAME=${RELEASE_NAME:-"account-controller"}
@@ -164,6 +164,7 @@ fi
 # 2. HELM_SET_ARGS (parameters set internally in the script)
 # 3. HELM_OPTS (the parameter passed by the user via --env, with the highest priority, can override the previous configuration)
 helm upgrade -i "${RELEASE_NAME}" -n "${RELEASE_NAMESPACE}" --create-namespace "${CHART_PATH}" \
+  -f "./charts/${SERVICE_NAME}/values.yaml" \
   -f "${USER_VALUES_PATH}" \
   ${AUTO_CONFIG_HELM_OPTS} \
   "${HELM_SET_ARGS[@]}" \
