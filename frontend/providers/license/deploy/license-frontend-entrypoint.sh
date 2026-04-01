@@ -78,6 +78,9 @@ if [ ! -f "${USER_VALUES_PATH}" ]; then
   cp "./charts/${SERVICE_NAME}/${SERVICE_NAME}-values.yaml" "${USER_VALUES_PATH}"
 fi
 
+## Clean up old cluster resources that are no longer used
+kubectl delete clusterrolebinding license-frontend-role-binding --ignore-not-found
+
 # Deploy Helm chart
 echo "Deploying Helm chart..."
 helm upgrade -i "${RELEASE_NAME}" -n "${RELEASE_NAMESPACE}" --create-namespace "${CHART_PATH}" \
